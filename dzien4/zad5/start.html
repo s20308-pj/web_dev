@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Domek</title>
+    <style>
+        body {
+            position: relative;
+        }
+        span {
+            display: block;
+            padding: 10px 5px;
+            width: 100px;
+            border: 3px solid black;
+            text-align: center;
+            cursor: pointer;
+            }
+
+        div{
+                transition: linear 1s;
+            }
+        div:nth-child(3) {
+            position: absolute;
+            width: 28vh;
+            height: 28vh;
+            background-color: black;
+            border: 2px solid black;
+            transform: rotate(45deg) translate(100vh, 200vh);;
+            top:36vh;
+            left:56vh;
+            transition-delay: .1s;
+            
+        }
+        div:nth-child(4) {
+            position: absolute;
+            width: 40vh;
+            height: 30vh;
+            background-color: brown;
+            border: 2px solid black;
+            top:50vh;
+            left:50vh;
+            transform: translate(500vh, 100vh);
+            transition-delay: .3s;
+        }
+
+        div:nth-child(2) {
+            position: absolute;
+            width: 3vh;
+            height: 10vh;
+            background-color: red;
+            border: 2px solid black;
+            top: 30vh;
+            left: 75vh;
+            transform: translate(200vh, 200vh);
+        }
+
+        div:nth-child(5) {
+            position: absolute;
+            width: 7vh;
+            height: 15vh;
+            background-color: grey;
+            border: 2px solid black;
+            top:65vh;
+            left:67.5vh;
+            transform: translate(-100vh, -500vh);
+        }
+        div:nth-child(6) {
+            position: absolute;
+            width: 7vh;
+            height: 7vh;
+            background-color: greenyellow;
+            border: 2px solid black;
+            top:60vh;
+            left:55.5vh;
+            transform: translate(-300vh, 500vh);
+        }
+        div:nth-child(7) {
+            position: absolute;
+            width: 7vh;
+            height: 7vh;
+            background-color: greenyellow;
+            border: 2px solid black;
+            top:60vh;
+            left:79.5vh;
+            transform: translate(100vh, -100vh);
+        }
+        span:hover ~ div {
+            transform: translate(0, 0);
+        }
+        span:hover ~ div:nth-child(3) {
+            transform: translate(0, 0) rotate(45deg);
+        }
+    </style>
+
+</head>
+
+<body>
+    <span>BUDUJEMY</span>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+
+</html>
